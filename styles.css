@@ -1,0 +1,206 @@
+/* Custom styles for the tutoring website */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Card styling */
+.card {
+    background: white;
+    border: 1px solid hsl(220, 13%, 91%);
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transform: translateY(-2px);
+}
+
+/* Navigation shadow */
+nav {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+}
+
+/* Avatar styling */
+.avatar {
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+/* Button transitions */
+button {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Form focus states */
+input:focus,
+textarea:focus {
+    outline: 2px solid hsl(220, 70%, 15%);
+    outline-offset: 2px;
+}
+
+/* Success message animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#successMessage:not(.hidden) {
+    animation: slideIn 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Smooth hover effects */
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Loading state for form submission */
+button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Profile photo styling */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid hsl(30, 95%, 55%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Promo bar styling */
+#promoBar {
+  animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Button inside promo bar */
+#promoBar button {
+  font-size: 0.85rem;
+}
+
+/* Pricing adjustments */
+.line-through {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.card .text-5xl {
+  font-size: 2.75rem;
+}
+
+/* Make the pricing look clean and balanced */
+#pricing .card {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#pricing .card:hover {
+  transform: translateY(-5px);
+}
+
+/* ---------- NAV + PROMO BAR FIX ---------- */
+
+/* set consistent heights used by nav + promo bar */
+:root{
+  --nav-height: 64px;    /* adjust if your nav is taller/shorter */
+  --promo-height: 36px;  /* slim bar height */
+}
+
+/* ensure the fixed nav has the height variable (if you want to use it) */
+nav {
+  height: var(--nav-height);
+  z-index: 50; /* keep nav above promo */
+}
+
+/* promo bar pinned immediately below the nav */
+#promoBar {
+  position: fixed;
+  top: calc(var(--nav-height)); /* directly under the fixed nav */
+  left: 0;
+  right: 0;
+  height: var(--promo-height);
+  line-height: var(--promo-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 49; /* below nav but above page content */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* keep animation (optional) */
+@keyframes slideDown {
+  from { transform: translateY(-6px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+#promoBar { animation: slideDown 0.35s ease; }
+
+/* ensure page content is pushed down so it's not hidden behind nav + promo bar */
+body {
+  /* If you already have a top padding for the hero, reduce/merge accordingly.
+     This guarantees the content starts below nav + promo bar. */
+  padding-top: calc(var(--nav-height) + var(--promo-height));
+}
+
+/* small responsive tweak for mobile: slightly smaller promo height */
+@media (max-width: 640px) {
+  :root { --promo-height: 34px; --nav-height: 60px; }
+  #promoBar { padding: 0 0.75rem; }
+}

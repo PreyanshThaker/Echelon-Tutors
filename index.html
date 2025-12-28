@@ -1,0 +1,456 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echelon Tutors - Get your child top grades in GCSE Maths and A-Level Maths!</title>
+    <meta name="description" content="Expert GCSE tutoring from a recent Grade 9 achiever. Affordable, effective tuition for students aiming for Medicine, Dentistry, or Oxbridge." />
+    <meta name="author" content="Preyansh" />
+    
+    <meta property="og:title" content="Tutoring by Preyansh - Top GCSE Results" />
+    <meta property="og:description" content="Expert GCSE tutoring from a recent Grade 9 achiever. Affordable, effective tuition for students aiming for Medicine, Dentistry, or Oxbridge." />
+    <meta property="og:type" content="website" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: 'hsl(220, 70%, 15%)',
+                        'primary-foreground': 'hsl(0, 0%, 100%)',
+                        secondary: 'hsl(210, 40%, 96%)',
+                        'secondary-foreground': 'hsl(220, 70%, 15%)',
+                        accent: 'hsl(30, 95%, 55%)',
+                        'accent-foreground': 'hsl(0, 0%, 100%)',
+                        success: 'hsl(142, 71%, 45%)',
+                        'success-foreground': 'hsl(0, 0%, 100%)',
+                        muted: 'hsl(220, 14%, 96%)',
+                        'muted-foreground': 'hsl(220, 13%, 46%)',
+                        border: 'hsl(220, 13%, 91%)',
+                        foreground: 'hsl(220, 26%, 14%)',
+                        background: 'hsl(0, 0%, 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-foreground font-body">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <button onclick="scrollToSection('hero')" class="font-heading font-bold text-xl text-primary hover:opacity-80 transition-opacity">
+                echelontutors.co.uk
+            </button>
+            
+            <div class="hidden md:flex items-center gap-6">
+                <button onclick="scrollToSection('about')" class="text-foreground hover:text-primary transition-colors font-medium">
+                    About Us
+                </button>
+                <button onclick="scrollToSection('testimonials')" class="text-foreground hover:text-primary transition-colors font-medium">
+                    Testimonials
+                </button>
+                <button onclick="scrollToSection('pricing')" class="text-foreground hover:text-primary transition-colors font-medium">
+                    Pricing Options
+                </button>
+                <button onclick="scrollToSection('contact')" class="bg-primary text-primary-foreground px-6 py-2 rounded-full hover:opacity-90 transition-opacity font-medium">
+                    Contact Me
+                </button>
+            </div>
+            
+            <div class="md:hidden">
+                <button onclick="scrollToSection('contact')" class="bg-primary text-primary-foreground px-6 py-2 rounded-full hover:opacity-90 transition-opacity font-medium">
+                    Contact
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="promoBar" class="bg-blue-600 text-white text-sm py-2 px-4 flex justify-between items-center">
+  <span>🚀 Limited-time offer: Get expert tutoring for a fraction of the price!</span>
+  <div class="flex items-center gap-2">
+    <button onclick="scrollToSection('pricing')" class="bg-white text-blue-600 font-semibold px-3 py-1 rounded hover:bg-blue-50 transition">Check it out</button>
+    <button onclick="document.getElementById('promoBar').style.display='none'" class="text-white text-lg leading-none">&times;</button>
+  </div>
+</div>
+
+
+    <meta property="og:title" content="Tutoring by Preyansh - Top GCSE Results" />
+    <meta property="og:description" content="Expert GCSE tutoring from a recent Grade 9 achiever. Affordable, effective tuition for students aiming for Medicine, Dentistry, or Oxbridge." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero -->
+    <section id="hero" class="pt-32 pb-20 px-4">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-primary mb-6 leading-tight">
+                Want Top GCSE Maths and A Level Grades for your child in this upcoming exam season?
+            </h1>
+            <p class="text-2xl md:text-3xl text-muted-foreground font-medium mb-8">
+                Echelon Tutors can help!
+            </p>
+            <button onclick="scrollToSection('contact')" class="rounded-full bg-accent text-accent-foreground hover:opacity-90 text-lg px-8 py-3 font-medium inline-flex items-center gap-2 transition-all hover:gap-3">
+                Get Started Today
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- About -->
+    <!-- About -->
+<section id="about" class="py-20 px-4 bg-secondary/30">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="font-heading font-bold text-4xl md:text-5xl text-center text-primary mb-16">
+      About Echelon Tutors
+    </h2>
+
+    <!-- Lead Tutor -->
+    <div class="card p-10 mb-16">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        
+        <!-- Lead Tutor Text -->
+        <div>
+          <h3 class="font-heading font-bold text-3xl text-primary mb-4">
+            Our Lead Tutor – Shubhan
+          </h3>
+
+          <ul class="space-y-3 text-lg">
+            <li class="font-medium">Alumni of Tiffin Boys’ Grammar School</li>
+            <li class="font-medium">Achieved <span class="font-bold text-success">Grade 9</span> in Mathematics</li>
+            <li class="font-medium">
+              Achieved <span class="font-bold text-success">A*A*A*A</span> in Maths, Chemistry, Biology & Further Maths
+            </li>
+            <li class="font-medium">
+              Bachelor's Degree in <span class="font-bold text-success">Mathematics</span> from the <span class="font-bold text-success">University of Warwick</span>
+            </li>
+            <li class="font-medium">Patient, honest, and highly exam-focused</li>
+          </ul>
+
+          <div class="mt-6 bg-accent/5 border-l-4 border-accent p-5 rounded-r-lg">
+            <p class="text-lg leading-relaxed">
+              Shubhan doesn’t just teach content — he teaches <span class="font-bold">how to score marks</span>.
+              He will help your child achieve the results they want while building genuine confidence
+              and passion for Mathematics.
+            </p>
+          </div>
+        </div>
+
+        <!-- Lead Tutor Image -->
+        <div class="flex justify-center">
+          <!-- Replace src with Shubhan image -->
+          <img
+  src="shubhan.jpg"
+  alt="Shubhan - Lead Tutor"
+  class="w-72 h-96 rounded-full object-cover object-[50%_5%] border-4 border-accent shadow-lg"
+/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Assistant Tutors -->
+    <h3 class="font-heading font-bold text-3xl text-center text-primary mb-10">
+      Our Assistant Tutors
+    </h3>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Preyansh -->
+      <div class="card p-8">
+        <div class="flex items-center gap-4 mb-4">
+          <img 
+            src="PreyanshThaker.jpg" 
+            alt="Preyansh" 
+            class="w-20 h-20 rounded-full object-cover border-2 border-accent"
+          />
+          <h4 class="font-heading font-semibold text-2xl text-primary">
+            Preyansh
+          </h4>
+        </div>
+
+        <ul class="space-y-2">
+          <li>Sat GCSEs last year</li>
+          <li>
+            Achieved <span class="font-bold text-success">Grade 9s</span> in Maths, Chemistry, Biology,
+            Physics, English Literature & History
+          </li>
+          <li>Highly focused on exam technique and past-paper mastery</li>
+          <li class="font-medium">
+            Available to personally help your child within <span class="font-bold">24 hours</span> of messaging
+          </li>
+        </ul>
+      </div>
+
+      <!-- Ayurdha -->
+      <div class="card p-8">
+        <div class="flex items-center gap-4 mb-4">
+          <img 
+  src="ayurdha.png" 
+  alt="Ayurdha"
+  class="w-20 h-20 rounded-full object-cover object-[50%_25%] border-2 border-accent"
+/>
+          <h4 class="font-heading font-semibold text-2xl text-primary">
+            Ayurdha
+          </h4>
+        </div>
+
+        <ul class="space-y-2">
+          <li>
+            Achieved <span class="font-bold text-success">Grade 9</span> in Maths, Chemistry & Physics
+          </li>
+          <li>Currently studying A-Levels: Maths, Chemistry, Physics & Further Maths</li>
+          <li class="font-medium">
+            Available to personally help your child within <span class="font-bold">24 hours</span> of messaging
+          </li>
+          <li>
+            Designs <span class="font-medium">exclusive, targeted resources</span> based on exactly
+            what your child struggled with in lessons
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Testimonials -->
+<section id="testimonials" class="py-20 px-4">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="font-heading font-bold text-4xl md:text-5xl text-center text-primary mb-16">
+      Testimonials
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="card p-6 relative">
+        <svg class="absolute top-4 right-4 h-8 w-8 text-accent/20" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+        </svg>
+
+        <div class="flex items-center gap-4 mb-4">
+          <div class="avatar h-16 w-16 rounded-full border-2 border-accent bg-accent/10 overflow-hidden">
+            <img src="avatar_1.png" alt="Avatar" class="testimonial-avatar" />
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-lg text-primary">Simran</h3>
+            <p class="text-sm text-muted-foreground font-medium">Grade 8 Retake</p>
+          </div>
+        </div>
+
+        <p class="text-foreground leading-relaxed">
+          In August, my son did not manage to pass his Mathematics GCSE and got a grade 4. Shubhan's tutoring was so helpful and the only thing my son needed in order to not only pass his Maths GCSE, but get a grade 8 on his retake. Hats off to Echelon Tutors!
+        </p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="card p-6 relative">
+        <svg class="absolute top-4 right-4 h-8 w-8 text-accent/20" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+        </svg>
+
+        <div class="flex items-center gap-4 mb-4">
+          <div class="avatar h-16 w-16 rounded-full border-2 border-accent bg-accent/10 overflow-hidden">
+            <img src="avatar_2.png" alt="Avatar" class="testimonial-avatar" />
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-lg text-primary">Jackie</h3>
+            <p class="text-sm text-muted-foreground font-medium">Grade 9 in Mathematics!</p>
+          </div>
+        </div>
+
+        <p class="text-foreground leading-relaxed">
+          The best investment we made for our daughter's education. She wants to do Medicine, and GCSEs are an incredibly important step to help her achieve this. Shubhan's teaching style is engaging and he explains complex topics, past paper techniques in a way that's easy to understand. My daughter got a Grade 9 in Mathematics after a month of tutoring, allowing her to pursue her goal of becoming a Doctor!
+        </p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="card p-6 relative">
+        <svg class="absolute top-4 right-4 h-8 w-8 text-accent/20" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+        </svg>
+
+        <div class="flex items-center gap-4 mb-4">
+          <div class="avatar h-16 w-16 rounded-full border-2 border-accent bg-accent/10 overflow-hidden">
+            <img src="avatar_3.png" alt="Avatar" class="testimonial-avatar" />
+          </div>
+          <div>
+            <h3 class="font-heading font-semibold text-lg text-primary">Emily</h3>
+            <p class="text-sm text-muted-foreground font-medium">Son predicted A* in Mathematics!</p>
+          </div>
+        </div>
+
+        <p class="text-foreground leading-relaxed"> 
+          My son went from Grade E in A Level Maths to Grade B within a few months, and is now predicted an A*. My son can now pursue his dreams of becoming an engineer at a top uni like UCL! Not only is Shubhan a great tutor, the assistant tutors were incredibly helpful in providing exclusive, high quality revision material to my son, and were always willing to personally help him before any exam. They were crucial in my child's success. I would highly recommend Echelon Tutors!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Pricing -->
+<section id="pricing" class="py-20 px-4 bg-secondary/30">
+  <div class="container mx-auto max-w-4xl text-center">
+    <h2 class="font-heading font-bold text-4xl md:text-5xl text-primary mb-4">
+      Pricing Options
+    </h2>
+    <p class="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
+      Quality tutoring made affordable — limited-time discount available now.
+    </p>
+
+    <!-- Single Pricing Card -->
+    <div class="card overflow-hidden max-w-md mx-auto">
+      <div class="p-6 bg-gradient-to-br from-blue-500 to-blue-600">
+        <h3 class="font-heading font-bold text-2xl text-white mb-2">GCSE Success Package</h3>
+        <div class="flex justify-center items-baseline gap-2">
+          <span class="text-3xl font-bold text-blue-200 line-through">£30</span>
+          <span class="text-5xl font-bold text-white">£18</span>
+          <span class="text-blue-100">/ session</span>
+        </div>
+      </div>
+      <div class="p-6">
+        <ul class="space-y-3 mb-6 text-left">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-foreground">1-hour focused online sessions on weekends, 10am to 11am</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-foreground">Personalized revision resources, stemming what students struggled with in the lesson!</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-foreground">Homework support and feedback</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-foreground">Pay as you go for every lesson, and cancel any time!</span>
+          </li>
+        </ul>
+        <button onclick="scrollToSection('contact')" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-medium transition-colors">
+          Get Started
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="font-heading font-bold text-4xl md:text-5xl text-center text-primary mb-4">
+                Get in Touch
+            </h2>
+            <p class="text-center text-muted-foreground text-lg mb-12">
+                Ready to start your journey to academic success? Contact me today for a free consultation.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <!-- Email -->
+                <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <h3 class="font-heading font-semibold text-lg text-primary mb-2">Email</h3>
+                    <p class="text-muted-foreground text-sm">tutor@preyansh.co.uk</p>
+                </div>
+
+                <!-- Phone -->
+                <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <h3 class="font-heading font-semibold text-lg text-primary mb-2">Phone</h3>
+                    <p class="text-muted-foreground text-sm">+44 7723 079062</p>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+                    <svg class="w-12 h-12 mx-auto mb-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    <h3 class="font-heading font-semibold text-lg text-primary mb-2">WhatsApp</h3>
+                    <p class="text-muted-foreground text-sm">+44 7723 079062</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="card p-8">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-foreground mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-foreground mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-foreground mb-2">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-foreground mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-primary text-primary-foreground py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
+                        Send Message
+                    </button>
+                </form>
+                <div id="successMessage" class="hidden mt-4 p-4 bg-success/10 text-success rounded-lg">
+                    Thank you for your message! I'll get back to you soon.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+    <!-- Footer -->
+    <footer class="py-8 px-4 bg-secondary/50 border-t border-border">
+        <div class="container mx-auto text-center">
+            <p class="text-muted-foreground">
+                © <span id="currentYear"></span> Echelon Tutors. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+    <script src="script.js"></script>
+</body>
+</html>
